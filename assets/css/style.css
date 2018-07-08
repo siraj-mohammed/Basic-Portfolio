@@ -1,29 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    color: #777777;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    background-image: url("../images/background.png");
+}
+
+header{
+    background-color: white;
+    border-bottom: 2px solid #cccccc;
+    height: 69px;
+}
+
+#header_content{
+    margin: auto;
+    width: 960px;
+    padding-top: 0;
+}
+
+h1, h2{
+    font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+}
+
+h1{
+    background-color: #4AAAA5;
+    float: left;
+    font-size: 1.5em;
+    color: white;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+/* Style the unordered list of links */
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    padding: 25px;
     float:right;
 }
 
+/* Align links, set font size and add a border on right */
 li {
     float: left;
+    border-right: 1px solid #777777;
+    font-size: 16px;
 }
 
+/* Remove right border on the last item in the list */
+li:last-child {
+    border-right: none;
+}
+
+/* Format the links within the list */
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 0px 10px;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+li a:link{
+    color: #777777;
 }
 
-.current {
-    background-color: #4CAF50;
+/* Reset the link color after it has been visited */
+li a:visited{
+    color: #777777;
+}
+
+/* Change the link color to teal on hover */
+li a:hover {
+    background-color: #4AAAA5;
+    color: white;
+}
+
+#body_content{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 960px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+h2{
+    font-size: 1.5em;
+    color: #4AAAA5;
+    margin: 0;
+    padding: 15px 0px;
+    border-bottom: 2px solid #dddddd;;
+}
+
+img{
+    float: left;
+}
+
+p{
+    clear: right;
+}
+
+footer{
+    clear: both;
+    background-color: #666666;
+    color: #dddddd;
+    padding: 20px;
+    height: 60px;
+    width:100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    border-top: 5px solid #4AAAA5;
 }
