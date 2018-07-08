@@ -11,7 +11,7 @@ body {
 }
 
 header{
-    background-color: white;
+    background: white;
     border-bottom: 2px solid #cccccc;
     height: 69px;
 }
@@ -27,7 +27,7 @@ h1, h2{
 }
 
 h1{
-    background-color: #4AAAA5;
+    background: #4AAAA5;
     float: left;
     font-size: 1.5em;
     color: white;
@@ -72,17 +72,18 @@ li a:visited{
 
 /* Change the link color to teal on hover */
 li a:hover {
-    background-color: #4AAAA5;
+    background: #4AAAA5;
     color: white;
 }
 
 #body_content{
-    background-color: #ffffff;
+    background: #ffffff;
     border: 1px solid #dddddd;
     width: 960px;
     padding: 20px;
     margin: auto;
     margin-top: 30px;
+    overflow: hidden;
 }
 
 h2{
@@ -97,13 +98,9 @@ img{
     float: left;
 }
 
-p{
-    clear: right;
-}
-
 footer{
     clear: both;
-    background-color: #666666;
+    background: #666666;
     color: #dddddd;
     padding: 20px;
     height: 60px;
@@ -113,3 +110,28 @@ footer{
     bottom: 0;
     border-top: 5px solid #4AAAA5;
 }
+
+.container{
+    padding: 20px;
+    padding-left: 0;
+    width: 310px;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.picture{
+    width: 100%;
+}
+
+.caption{
+    padding: 20px;
+    width: 290px;
+    background: #4AAAA5;
+    color: white;
+    text-align: center; 
+    position: absolute;
+    bottom: 30px;
+}
+
