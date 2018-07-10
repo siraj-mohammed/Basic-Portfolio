@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+/* Removing margins and padding from body so each element can be styled and positioned independently
+Setting color, font-family per specification
+Adding a background image */
 body {
     color: #777777;
     margin: 0;
@@ -10,22 +13,27 @@ body {
     background-image: url("../images/background.png");
 }
 
+/* Styling the container that holds the entire heading - Name and Links - for each page 
+Keeping it separate from the content so that it can occupy the entire width of the page while the content is in the center */
 header{
     background: white;
     border-bottom: 2px solid #cccccc;
     height: 69px;
 }
 
+/* This element contains the name and links. Centering it and assigning a width per specification */
 #header_content{
     margin: auto;
     width: 960px;
     padding-top: 0;
 }
 
+/* Assigning font-family to headings as per specification */
 h1, h2{
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
 
+/* This is the element that contains the name on each page */
 h1{
     background: #4AAAA5;
     float: left;
@@ -35,7 +43,7 @@ h1{
     margin: 0;
 }
 
-/* Style the unordered list of links */
+/* Styling the unordered list of links */
 ul {
     list-style-type: none;
     margin: 0;
@@ -43,39 +51,41 @@ ul {
     float:right;
 }
 
-/* Align links, set font size and add a border on right */
+/* Aligning links, setting font size and adding a border on right */
 li {
     float: left;
     border-right: 1px solid #777777;
     font-size: 16px;
 }
 
-/* Remove right border on the last item in the list */
+/* Removing right border on the last item in the list */
 li:last-child {
     border-right: none;
 }
 
-/* Format the links within the list */
+/* Formatting the links within the list */
 li a {
     padding: 0px 10px;
     text-decoration: none;
 }
 
+/* Coloring the hyperlinks to match with regular font on the page */
 li a:link{
     color: #777777;
 }
 
-/* Reset the link color after it has been visited */
+/* Resetting the link color after it has been visited (clicked) */
 li a:visited{
     color: #777777;
 }
 
-/* Change the link color to teal on hover */
+/* Adding background color to links on hover */
 li a:hover {
     background: #4AAAA5;
     color: white;
 }
 
+/* Styling for the element that contains the profile image and the paragraphs */
 #body_content{
     background: #ffffff;
     border: 1px solid #dddddd;
@@ -86,18 +96,22 @@ li a:hover {
     overflow: hidden;
 }
 
+/* Page Title */
 h2{
     font-size: 1.5em;
     color: #4AAAA5;
     margin: 0;
     padding: 15px 0px;
-    border-bottom: 2px solid #dddddd;;
+    border-bottom: 2px solid #dddddd;
 }
 
+/* Floating the image so that text can appear to the right of it */
 img{
     float: left;
 }
 
+/* Styling for the footer that appears on every page
+Position fixed to the bottom of the page */
 footer{
     clear: both;
     background: #666666;
@@ -111,6 +125,7 @@ footer{
     border-top: 5px solid #4AAAA5;
 }
 
+/* This element on Portfolio page holds the images and captions */
 .container{
     padding: 20px;
     padding-left: 0;
@@ -121,10 +136,12 @@ footer{
     overflow: hidden;
 }
 
+/* Assigning width to image so it occupies 100% of the container's width */
 .picture{
     width: 100%;
 }
 
+/* Positioning the caption element to be relative to the container */
 .caption{
     padding: 20px;
     width: 290px;
@@ -135,33 +152,30 @@ footer{
     bottom: 30px;
 }
 
+/* Form on the Contact page */
 form{
     padding: 20px;
     padding-left: 0;
 }
 
-.name{
+/* Name and email input boxes on Contact page */
+#name, #email{
     width:100%;
     height: 28px;
     color: #777777;
     font-size: 14px;
 }
 
-.email{
-    width:100%;
-    height: 28px;
-    color: #777777;
-    font-size: 14px;
-}
-
-.message{
+/* Message text box on Contact page */
+#message{
     width:100%;
     height: 120px;
     color: #777777;
     font-size: 14px;
 }
 
-.button{
+/* Submit button on Contact page */
+#button{
     padding: 8px;
     background: #4AAAA5;
     color: white;
